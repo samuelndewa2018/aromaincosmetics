@@ -1,0 +1,95 @@
+.CartItemCard {
+  display: flex;
+  height: fit-content !important;
+  font-size: 12px !important;
+
+  padding: 1vmax;
+  height: 8vmax;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.CartItemCard > img {
+  max-width: 9vmax;
+  max-height: 125px;
+}
+
+.CartItemCard > div {
+  display: flex;
+  margin: 0.3vmax 1vmax;
+  flex-direction: column;
+}
+.CartItemCard .cart__title {
+  font: 300 1.4vmax cursive;
+  color: rgba(24, 24, 24, 0.815);
+  font-weight: bold;
+}
+
+.CartItemCard > div > span {
+  font: 300 1.3vmax "Roboto";
+  color: rgba(24, 24, 24, 0.815);
+  padding: 5px 0;
+}
+
+.CartItemCard > div > p {
+  color: #3bb77e;
+  font: 100 1.1vmax "Roboto";
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  margin-left: 4px;
+  padding: 5px 0 5px 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .subtotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 296px !important;
+    height: 171px !important;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin: 7px 27px;
+  }
+  .cart__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .CartItemCard {
+    padding: 3vmax 0 3vmax 1vmax;
+    display: block;
+  }
+  .CartItemCard > img {
+    width: 14vmax;
+    height: 10vmax;
+  }
+  .CartItemCard > div {
+    margin: 1vmax 2vmax;
+  }
+
+  .CartItemCard > div > a {
+    font: 300 2vmax cursive;
+  }
+
+  .CartItemCard > div > span {
+    font: 300 1.9vmax "Roboto";
+  }
+
+  .CartItemCard > div > p {
+    font: 400 2.2vmax "Roboto";
+    padding: 2px 7px;
+    width: fit-content;
+  }
+  .CartItemCard .cart__title {
+    line-height: 1;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}

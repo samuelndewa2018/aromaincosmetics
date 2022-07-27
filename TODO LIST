@@ -1,0 +1,5 @@
+// ADD products folder in cloundinary
+// bootstrap search icon
+//  var str = "Rs. 6,67,000";
+//     var res = str.replace(/\D/g, "");
+//     alert(res); // 667000

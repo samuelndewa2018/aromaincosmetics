@@ -1,0 +1,109 @@
+ul.pagination {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.page-item {
+  background-color: #fff !important;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.page-item:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.page-link {
+  font: 300 1.3vmax "Roboto";
+  color: rgb(80, 80, 80) !important;
+  transition: all 0.3s;
+}
+.page-item:hover {
+  background-color: rgb(230, 230, 230) !important;
+}
+.page-item:hover .page-link {
+  color: rgb(37, 37, 37);
+}
+.pageItemActive {
+  background-color: #197ef3 !important;
+}
+.pageLinkActive {
+  color: white;
+}
+li.category-link {
+  list-style: none;
+  font-family: Roboto;
+  cursor: pointer;
+  border-top: 1px solid #999;
+  padding: 10px 10px;
+  text-align: center;
+}
+li.category-link:hover {
+  color: #3bb77e;
+}
+.emptyProduct > p {
+  font-size: 2vmax;
+}
+.emptyProduct {
+  font-size: 6.5rem;
+  flex: 0.9 1;
+  margin-top: 69px;
+  margin: 123px auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyProduct > a {
+  background-color: #3bb77e;
+  color: white;
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  font: 400 1vmax "Roboto";
+  margin-top: 1%;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.FeaturedProductHeading {
+  text-align: center;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 39vmax;
+  font-size: 2.4vmax;
+  font-family: Poppins, sans-serif;
+  margin: 7vmax auto 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0.9 1 0%;
+}
+
+@media screen and (max-width: 600px) {
+  .FeaturedProductHeading {
+    width: 39vmax;
+    font-size: 3.4vmax;
+  }
+  .page-link {
+    font: 300 2.9vmax "Roboto";
+  }
+  .emptyProduct > a {
+    font: 400 2vmax "Roboto";
+  }
+  .products {
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+  }
+}

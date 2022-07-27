@@ -1,0 +1,77 @@
+.FavouriteItemsCard {
+  display: flex;
+  padding: 1vmax;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.FavouriteItemsCard > div > img {
+  width: 5vmax;
+}
+.favouritesButton {
+  padding: 12px 25px;
+  outline: none;
+  border: none;
+  background-color: #3bb77e;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.FavouriteItemsCard > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.FavouriteItemsCard > div > a {
+  font: 300 1.5vmax cursive;
+  color: rgba(24, 24, 24, 0.815);
+  text-decoration: none;
+}
+
+.FavouriteItemsCard > div > span {
+  font: 300 1.9vmax "Roboto";
+  color: rgba(24, 24, 24, 0.815);
+}
+
+.FavouriteItemsCard > div > p {
+  color: #3bb77e;
+  font: 100 1.5vmax "Roboto";
+  text-align: center;
+  border: 1px solid #3bb77e;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .FavouriteItemsCard {
+    height: 25vmax;
+  }
+  .FavouriteItemsCard > div > img {
+    width: 10vmax;
+    height: 57px;
+  }
+
+  .FavouriteItemsCard > div > a {
+    font: 300 2.5vmax cursive !important;
+  }
+
+  .FavouriteItemsCard > div > span {
+    font: 400 2.5vmax "Roboto" !important;
+  }
+
+  .FavouriteItemsCard > div > p {
+    font: 400 2.6vmax "Roboto" !important;
+  }
+  .favouritesButton {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  .FavouriteItemsCard > div > img {
+    width: 10vmax;
+  }
+}
